@@ -8,22 +8,22 @@
 		<style>
 		/*
 		 * Define a class called "bloodDefinition", which has 4 properties.
-		 * It is 600px in width; has a reddish font color(#FF0000); a black, dotted, 1px border; and a cream background color (#f3f4dc).
+		 * It is 400px in width; has a reddish font color(#FF0000); a black, dotted, 1px border; and a cream background color (#f3f4dc).
 		 */
 			.bloodDefinition{
-					width:600;
+					width:400;
+					background-color:#F9F1DC;
 					color:#FF0000;
 					border: 1px #000000 dotted;
-					background-color: #f3f4dc;		
+					background-color: #f3f4dc;
+					
 			}
-			
-			
 			/*
 		 * Define a class called "plasmaDefinition", which has 4 properties.
-		 * It is 600px in width; has a salmon font color; a black, dotted, 1px border; and a cream background color (#f3f4dc).
+		 * It is 400px in width; has a salmon font color; a black, dotted, 1px border; and a cream background color (#f3f4dc).
 		 */
 			.plasmaDefinition{
-					width:600
+					width:400
 					background-color:#F9F1DC;
 					color:salmon;
 					border: 1px #000000 dotted;
@@ -40,15 +40,19 @@
 		<!-- Added another tag -->
 		<!-- NOTE: In JS, 'var' reflects an empty container as 'div' denotes in HTML-->
 		
-		<!-- Make a div with red text inside it-->
-		<div style="color:#FF0012; border:0px dotted dodgerblue;">Blood, plasma definitions:</div>
+		<!-- Make a div with white text and dark background color, containing definition divs. Select Arial font to be used for all text within primary div.-->
 		
+		<div style="color:#FFFFFF; background-color:#2F1504; font-family: Arial; border:3px solid gray;">Blood, plasma definitions:
+		
+		<p>
 		<!-- Make a div with red text, defining blood.-->
-		
 		<div class="bloodDefinition">Blood: the red liquid that circulates in the arteries and veins of humans and other vertebrate animals, carrying oxygen to and carbon dioxide from the tissues of the body.</div>
+		</p>
 		
 		<!-- Make a div with salmon text, defining plasma.-->
 		<div class="plasmaDefinition">Plasma: the colorless fluid part of blood, lymph, or milk, in which corpuscles or fat globules are suspended.</div>
+			</div>
+	
 	</body>
 </html>
 	<script>
