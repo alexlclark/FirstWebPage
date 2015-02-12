@@ -1,88 +1,101 @@
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>AC3634's Web Project</title>
-	
+
 		<style>
-		/*
-		 * Define a class called "bloodDefinition", which has 4 properties.
-		 * It is 400px in width; has a reddish font color(#FF0000); a black, dotted, 1px border; and a cream background color (#f3f4dc).
-		 */
-			.bloodDefinition{
-					width:400;
-					background-color:#F9F1DC;
-					color:#FF0000;
-					border: 1px #000000 dotted;
-					background-color: #f3f4dc;
-					
+			/*
+			 * Define a class called "bloodDefinition", which has 4 properties.
+			 * It is 400px in width; has a reddish font color(#FF0000); a black, dotted, 1px border; and a cream background color (#f3f4dc).
+			 */
+			.bloodDefinition {
+				width: 400;
+				background-color: #F9F1DC;
+				color: #FF0000;
+				border: 1px #000000 dotted;
+				background-color: #f3f4dc;
 			}
 			/*
-		 * Define a class called "plasmaDefinition", which has 4 properties.
-		 * It is 400px in width; has a salmon font color; a black, dotted, 1px border; and a cream background color (#f3f4dc).
-		 */
-			.plasmaDefinition{
-					width:400;
-					background-color:#F9F1DC;
-					color:salmon;
-					border: 1px #000000 dotted;
-					background-color: #f3f4dc;
-					
+			 * Define a class called "plasmaDefinition", which has 4 properties.
+			 * It is 400px in width; has a salmon font color; a black, dotted, 1px border; and a cream background color (#f3f4dc).
+			 */
+			.plasmaDefinition {
+				width: 400;
+				background-color: #F9F1DC;
+				color: salmon;
+				border: 1px #000000 dotted;
+				background-color: #f3f4dc;
 			}
-			
+
 		</style>
-		
+
 	</head>
 	<body>
 		<h1>This is my page! Woohoo!</h1>
 		<h2>This is my secondary header!!</h2>
 		<!-- Added another tag -->
 		<!-- NOTE: In JS, 'var' reflects an empty container as 'div' denotes in HTML-->
-		
-		<!-- Make a div with white text and dark background color, containing definition divs. Select Arial font to be used for all text within primary div.-->
-		
-		<div style="color:#FFFFFF; background-color:#2F1504; font-family: Arial; border:3px solid gray;">Blood, plasma definitions:
-		
-		<p>
-		<!-- Make a div with red text, defining blood.-->
-		<div class="bloodDefinition">Blood: the red liquid that circulates in the arteries and veins of humans and other vertebrate animals, carrying oxygen to and carbon dioxide from the tissues of the body.</div>
-		</p>
-		
-		<!-- Make a div with salmon text, defining plasma.-->
-		<div class="plasmaDefinition">Plasma: the colorless fluid part of blood, lymph, or milk, in which corpuscles or fat globules are suspended.</div>
-			</div>
 
-	<script>
-			
+		<!-- Make a div with white text and dark background color, containing definition divs. Select Arial font to be used for all text within primary div.-->
+
+		<div style="color:#FFFFFF; background-color:#2F1504; font-family: Arial; border:3px solid gray;">
+			Blood, plasma definitions:
+
+			<p>
+				<!-- Make a div with red text, defining blood.-->
+				<div class="bloodDefinition">
+					Blood: the red liquid that circulates in the arteries and veins of humans and other vertebrate animals, carrying oxygen to and carbon dioxide from the tissues of the body.
+				</div>
+			</p>
+
+			<!-- Make a div with salmon text, defining plasma.-->
+			<div class="plasmaDefinition">
+				Plasma: the colorless fluid part of blood, lymph, or milk, in which corpuscles or fat globules are suspended.
+			</div>
+		</div>
+
+		<script>
 			/*
 			 * Describe wallet contents and personal information in wallet.
-			 * 
+			 *
 			 */
-			
-			var walletString= "I found several items when cleaning out my wallet. These objects described my personal attributes and birth date.";/* This describes what was revealed by identification in my wallet when examined during cleaning.*/
-			var walletArray = ["Columbia ID","Social Security Card","Georgia Driver's License", "Wallet-sized photograph"]; /* These are the items in my wallet.*/
-			var dobMMDDYYYY = 11101987; /* This number describes the Date of Birth reflected on my ID as a numerical value*/ 
-			var maleBoolean = true; /* This boolean denotes my gender, accurately described as male.*/
-			var physicalObject = {alexHeight: "Five feet, ten inches.", /* This is my height as described on identification within my wallet.*/
-									alexEyeColor: "Brown", /* This is my eye color as described on identification within my wallet.*/
-									alexWeight: "165 Pounds", /* This is my weight as described on identification within my wallet.*/
-									alexHairColor: "Black"}; /* This is my hair color as described on identification within my wallet.*/
-			
-			console.log(walletString);	
+
+			var walletString = "I found several items when cleaning out my wallet. These objects described my personal attributes and birth date.";
+			/* This describes what was revealed by identification in my wallet when examined during cleaning.*/
+			var walletArray = ["Columbia ID", "Social Security Card", "Georgia Driver's License", "Wallet-sized photograph"];
+			/* These are the items in my wallet.*/
+			var dobMMDDYYYY = 11101987;
+			/* This number describes the Date of Birth reflected on my ID as a numerical value*/
+			var maleBoolean = true;
+			/* This boolean denotes my gender, accurately described as male.*/
+			var physicalObject = {
+				alexHeight : "Five feet, ten inches.", /* This is my height as described on identification within my wallet.*/
+				alexEyeColor : "Brown", /* This is my eye color as described on identification within my wallet.*/
+				alexWeight : "165 Pounds", /* This is my weight as described on identification within my wallet.*/
+				alexHairColor : "Black"
+			};
+			/* This is my hair color as described on identification within my wallet.*/
+
+			console.log(walletString);
 			console.log(walletArray);
-			console.log(physicalObject);	
-					
-			console.log(physicalObject.alexWeight);/*Return original weight on identification in console.*/
-			physicalObject.alexWeight= "190 Pounds"; /* Went on a heavy chocolate binge during finals week. Updating to reflect current weight.*/
-			console.log(physicalObject.alexWeight);	/*Return final, updated weight after chocolate binge in console.*/
-				
+			console.log(physicalObject);
+
+			console.log(physicalObject.alexWeight);
+			/*Return original weight on identification in console.*/
+			physicalObject.alexWeight = "190 Pounds";
+			/* Went on a heavy chocolate binge during finals week. Updating to reflect current weight.*/
+			console.log(physicalObject.alexWeight);
+			/*Return final, updated weight after chocolate binge in console.*/
+
 		</script>
 
 		<script>
-		/*this is a list (array) as indicated by the square brackets.*/
-		
+			/*this is a list (array) as indicated by the square brackets.*/
+
+			var favmarket = []
+
 			var market = [{
 				name : "bacon",
 				type : "meat"
@@ -95,31 +108,92 @@
 			}, {
 				name : "veal",
 				type : "meat"
+			}, {
+				name : "tuna",
+				type : "meat"
 			}];
+
+			/* "for" loop
+			 * it has round parens, which means "fuction"
+			 * "for" is a function that javascript already knows what to do with
+			 * (consider a function a process - one in which the steps do not change)
+			 *
+			 * required ingredients: where to start, where to end, how many to increment
+			 */
+			for (var i = 0; i < 5; i++) {/*++ is n+1*/
+
+				console.log(i);
+				console.log(market[i]);
+
+				var myItem = market[i];
+				/*creating additional label to not repeat market[i]*/
+
+				if (myItem.type == "fish") {
+
+					console.log(myItem);
+				} else {
+					console.log("No thanks ")
+					//end of else statement
+
+				} // end of if statement
+
+
+			/*this is a list (array) as indicated by the square brackets.*/
+
+			var market_2 = [{
+				name : "lucky_charms",
+				type : "cereal"
+			}, {
+				name : "milk",
+				type : "dairy"
+			}, {
+				name : "eggs",
+				type : "dairy"
+			}, {
+				name : "cheese",
+				type : "dairy"
+			}, {
+				name : "granola",
+				type : "cereal"
+			}];
+
+			/* function sortMarket takes a list of market objects
+			 as an  arguement and prints out the ones of type plain*/
+			function sortMarket(marketList) {
+				for (var i = 0; i < 5; i++) {/*++ is n+1*/
+
+					var myItem = market[i];
+					/*creating additional label to not repeat market[i]*/
+
+					if (myItem.type == "fish") {
+
+						console.log(myItem);
+					} else {
+						console.log("No thanks ")
+					}
+					//end of else statement
+
+				}// end of if statement
+
+				favMarket.push(myitem)
+				return (favMarket)
+
+			}// end of for loop
+
+}// end of sortMarkets function
+			console.log("sorting market_2");
+			sortMarket(market_2);
+			var favs1 = sortMarket(market_2)
+			console.log(favs1)
+
+			console.log("sorting markets");
+			sortMarket(market);
+			var favs2 = sortMarket(market_2)
+			console.log(favs2)
 			
-		/* "for" loop
-		* it has round parens, which means "fuction"
-		* "for" is a function that javascript already knows what to do with
-		* (consider a function a process - one in which the steps do not change)
-		*
-		* required ingredients: where to start, where to end, how many to increment
-		*/
-		for(var i=0; i<4; i++){  /*++ is n+1*/
-
-		console.log(i);
-		console.log(market[i]);
-		
-		var myItem = market[i]; /*creating additional label to not repeat market[i]*/
-	
-	if(myItem.type =="fish"){
-	
-		console.log(myItem);
-		} // end of if statement	
-	
-	} // end of for loop
+			
 
 		</script>
-		</script>
-		
-			</body>
+
+	</body>
 </html>
