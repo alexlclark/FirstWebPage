@@ -160,6 +160,8 @@
 			/* function sortMarket takes a list of market objects
 			 as an  arguement and prints out the ones of type plain*/
 			function sortMarket(marketList) {
+				
+				var favMarket=[]
 				for (var i = 0; i < 5; i++) {/*++ is n+1*/
 
 					var myItem = market[i];
@@ -174,8 +176,8 @@
 					//end of else statement
 
 				}// end of if statement
-
-				favMarket.push(myitem)
+	
+				favMarket.push(myItem)
 				return (favMarket)
 
 			}// end of for loop
@@ -186,7 +188,7 @@
 			var favs1 = sortMarket(market_2)
 			console.log(favs1)
 
-			console.log("sorting markets");
+			console.log("sorting market");
 			sortMarket(market);
 			var favs2 = sortMarket(market_2)
 			console.log(favs2)
