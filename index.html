@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -11,7 +12,7 @@
 		 * It is 400px in width; has a reddish font color(#FF0000); a black, dotted, 1px border; and a cream background color (#f3f4dc).
 		 */
 			.bloodDefinition{
-					width:400px;
+					width:400;
 					background-color:#F9F1DC;
 					color:#FF0000;
 					border: 1px #000000 dotted;
@@ -23,7 +24,7 @@
 		 * It is 400px in width; has a salmon font color; a black, dotted, 1px border; and a cream background color (#f3f4dc).
 		 */
 			.plasmaDefinition{
-					width:400px;
+					width:400;
 					background-color:#F9F1DC;
 					color:salmon;
 					border: 1px #000000 dotted;
@@ -52,7 +53,6 @@
 		<!-- Make a div with salmon text, defining plasma.-->
 		<div class="plasmaDefinition">Plasma: the colorless fluid part of blood, lymph, or milk, in which corpuscles or fat globules are suspended.</div>
 			</div>
-	
 
 	<script>
 			
@@ -72,12 +72,53 @@
 			
 			console.log(walletString);	
 			console.log(walletArray);
-			console.log(physicalObject;
+			console.log(physicalObject);	
 					
 			console.log(physicalObject.alexWeight);/*Return original weight on identification in console.*/
 			physicalObject.alexWeight= "190 Pounds"; /* Went on a heavy chocolate binge during finals week. Updating to reflect current weight.*/
 			console.log(physicalObject.alexWeight);	/*Return final, updated weight after chocolate binge in console.*/
 				
+		</script>
+
+		<script>
+		/*this is a list (array) as indicated by the square brackets.*/
+		
+			var market = [{
+				name : "bacon",
+				type : "meat"
+			}, {
+				name : "grouper",
+				type : "fish"
+			}, {
+				name : "salmon",
+				type : "fish"
+			}, {
+				name : "veal",
+				type : "meat"
+			}];
+			
+		/* "for" loop
+		* it has round parens, which means "fuction"
+		* "for" is a function that javascript already knows what to do with
+		* (consider a function a process - one in which the steps do not change)
+		*
+		* required ingredients: where to start, where to end, how many to increment
+		*/
+		for(var i=0; i<4; i++){  /*++ is n+1*/
+
+		console.log(i);
+		console.log(market[i]);
+		
+		var myItem = market[i]; /*creating additional label to not repeat market[i]*/
+	
+	if(myItem.type =="fish"){
+	
+		console.log(myItem);
+		} // end of if statement	
+	
+	} // end of for loop
+
+		</script>
 		</script>
 		
 			</body>
