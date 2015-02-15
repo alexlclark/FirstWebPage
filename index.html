@@ -134,16 +134,12 @@
 			 * it has round parens, which means "fuction"
 			 * "for" is a function that javascript already knows what to do with
 			 * (consider a function a process - one in which the steps do not change)
-			 *
-			 * required ingredients: where to start, where to end, how many to increment
-			 */
+			 * required 'ingredients': where to start, where to end, how many to increment*/
 
 			function sortAlbums(albumsArg) {//sortAlbums is the function which will sort, albumsArg is name for list of albums to sort.
-				var favAlbums = [];
-				//created var for favorite list of albums, left brackets empty to create an empty list
-				var nonFavs = [];
-				//created var for non-favorite list of albums (also empty list)
-				for (var i = 0; i < 4; i++) {// i is the number of the item on list being looked up, ++ is n+1
+				var favAlbums = []; //created var for favorite list of albums, left brackets empty to create an empty list
+				var nonFavs = []; //created var for non-favorite list of albums (also empty list)
+				//for (var i = 0; i < 4; i++) {// i is the number of the item on list being looked up, ++ is n+1 (commented out, as unused with function)
 
 					// console.log(albums[i]); // console logging all albums and their details (commented out this log)
 					var myItem = albumsArg[i];
@@ -158,12 +154,12 @@
 					}// end of if statement
 				}// end of for loop
 
-				/*I expect this to return 'the future is now' and 'illmatic' as favs in the hiphop genre in one line and
-				 'I'll sleep when you're dead' and 'reasonable doubt' as favs in the hiphop genre on a second line*/
+				/*I expect this to return 'the future is now' and 'illmatic' as favs in the hiphop genre in one line (albums sort) and
+				 'I'll sleep when you're dead' and 'reasonable doubt' as favs in the hiphop genre on a second line(albums2 sort)*/
 				console.log(favAlbums);
 
-				/*I expect this to return 'dummy' and 'wirelessInternet' as nonfavs (not in the hiphop genre) in one line and
-				 'portishead' and 'moon safari' as nonfavs (not in the hiphop genre) on a second line*/
+				/*I expect this to return 'dummy' and 'wirelessInternet' as nonfavs (not in the hiphop genre) in one line(albums sort) and
+				 'portishead' and 'moon safari' as nonfavs (not in the hiphop genre) on a second line(albums2 sort)*/
 				console.log(nonFavs);
 			}// end of sortAlbums function
 
