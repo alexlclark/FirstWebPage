@@ -94,7 +94,7 @@
 		<script>
 			/*this is a list (array, as indicated by the square brackets) of albums and their genres.*/
 
-			var albums = [{ //note: albums is the 'global identifier' in function sortAlbum, this is localled named albumsArg
+			var albums = [{//albums is the 'global identifier' in function sortAlbum, this is localled named albumsArg
 				name : "dummy",
 				artist : "portishead",
 				genre : "triphop"
@@ -111,6 +111,24 @@
 				artist : "arpanet",
 				genre : "ambient"
 			}];
+			
+			var albums2 = [{//second list of similar albums
+				name : "portishead",
+				artist : "portishead",
+				genre : "triphop"
+			}, {
+				name : "ill sleep when you're dead",
+				artist : "el-p",
+				genre : "hiphop"
+			}, {
+				name : "reasonable doubt",
+				artist : "jay-Z",
+				genre : "hiphop"
+			}, {
+				name : "moon safari",
+				artist : "air",
+				genre : "ambient"
+			}];
 
 			/* "for" loop
 			 * it has round parens, which means "fuction"
@@ -120,14 +138,17 @@
 			 * required ingredients: where to start, where to end, how many to increment
 			 */
 
-			function sortAlbums(albumsArg) { //sortAlbums is the function which will sort, albumsArg is name for list of albums to sort.
-				var favAlbums = []; //created var for favorite list of albums, left brackets empty to create an empty list
-				var nonFavs = []; //created var for non-favorite list of albums (also empty list)
+			function sortAlbums(albumsArg) {//sortAlbums is the function which will sort, albumsArg is name for list of albums to sort.
+				var favAlbums = [];
+				//created var for favorite list of albums, left brackets empty to create an empty list
+				var nonFavs = [];
+				//created var for non-favorite list of albums (also empty list)
 				for (var i = 0; i < 4; i++) {// i is the number of the item on list being looked up, ++ is n+1
 
 					// console.log(albums[i]); // console logging all albums and their details (commented out this log)
 
-					var myItem = albumsArg[i];//now reflects local name in function
+					var myItem = albumsArg[i];
+					//now reflects local name in function
 					//created var myItem, which is eqivalent, or a renamed designation of contents in albums array
 					if/*testing for genre=hiphop*/ (myItem.genre == "hiphop") {//opening bracket of if statement return value
 
@@ -140,7 +161,8 @@
 
 				}// end of for loop
 			}// end of sortAlbums function
-
+		sortAlbums(albums); //returned console log for function sortAlbums, should list the two hiphop albums in array 'albums' and return string for others.
+		sortAlbums(albums2); //returned console log for function sortAlbums, should list the two hiphop albums in array 'albums2' and return string for others.
 		</script>
 
 	</body>
