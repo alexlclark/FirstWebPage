@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>AC3634's Web Project</title>
+		<title>Alex Clark's Data Visualization Working Site</title>
 
 		<style>
 			/*
@@ -33,8 +33,8 @@
 
 	</head>
 	<body bgcolor="gray">
-		<h1>This is my page! Woohoo!</h1>
-		<h2>This is my secondary header!!</h2>
+		<h1>Our Bog is dood, our Bog is dood</h1>
+		<h2>They lisped in accents mild</h2>
 		<!-- Added another tag -->
 		<!-- NOTE: In JS, 'var' reflects an empty container as 'div' denotes in HTML-->
 
@@ -94,7 +94,7 @@
 		<script>
 			/*this is a list (array, as indicated by the square brackets) of albums and their genres.*/
 
-			var albums = [{//albums is the 'global identifier' in function sortAlbum, this is localled named albumsArg
+			var albums = [{//albums is the 'global identifier' in function sortAlbum, this is locally named albumsArg.
 				name : "dummy",
 				artist : "portishead",
 				genre : "triphop"
@@ -111,7 +111,7 @@
 				artist : "arpanet",
 				genre : "ambient"
 			}];
-			
+
 			var albums2 = [{//second list of similar albums
 				name : "portishead",
 				artist : "portishead",
@@ -146,30 +146,31 @@
 				for (var i = 0; i < 4; i++) {// i is the number of the item on list being looked up, ++ is n+1
 
 					// console.log(albums[i]); // console logging all albums and their details (commented out this log)
-
 					var myItem = albumsArg[i];
 					//now reflects local name in function
 					//created var myItem, which is eqivalent, or a renamed designation of contents in albums array
 					if/*testing for genre=hiphop*/ (myItem.genre == "hiphop") {//opening bracket of if statement return value
 
-						
-
 						favAlbums.push(myItem);
 					} else {//else statement to return string in all cases where genre doesn't = hiphop in albums array
-						nonFavs.push(myItem); //console logging all non-hiphop albums with string	
+						nonFavs.push(myItem);
+						//console logging all non-hiphop albums with string
 					}// end of if statement
 				}// end of for loop
-				
-				/*I expect this to return 'the future is now' and 'illmatic' as favs in the hiphop genre in one line and 
-				 * 'I'll sleep when you're dead' and 'reasonable doubt' as favs in the hiphop genre on a second line*/
+
+				/*I expect this to return 'the future is now' and 'illmatic' as favs in the hiphop genre in one line and
+				 'I'll sleep when you're dead' and 'reasonable doubt' as favs in the hiphop genre on a second line*/
 				console.log(favAlbums);
-				
-				/*I expect this to return 'dummy' and 'wirelessInternet' as nonfavs (not in the hiphop genre) in one line and 
-				 * 'portishead' and 'moon safari' as nonfavs (not in the hiphop genre) on a second line*/
+
+				/*I expect this to return 'dummy' and 'wirelessInternet' as nonfavs (not in the hiphop genre) in one line and
+				 'portishead' and 'moon safari' as nonfavs (not in the hiphop genre) on a second line*/
 				console.log(nonFavs);
 			}// end of sortAlbums function
-		sortAlbums(albums); //returned console log for function sortAlbums, should list the two hiphop albums in array 'albums' and return string for others.
-		sortAlbums(albums2); //returned console log for function sortAlbums, should list the two hiphop albums in array 'albums2' and return string for others.
+
+			sortAlbums(albums);
+			//returned console log for function sortAlbums, should list the two hiphop albums in array 'albums' and return string for others.
+			sortAlbums(albums2);
+			//returned console log for function sortAlbums, should list the two hiphop albums in array 'albums2' and return string for others.
 		</script>
 
 	</body>
