@@ -94,7 +94,7 @@
 		<script>
 			/*this is a list (array, as indicated by the square brackets) of albums and their genres.*/
 
-			var albums = [{
+			var albums = [{ //note: albums is the 'global identifier' in function sortAlbum, this is localled named albumsArg
 				name : "dummy",
 				artist : "portishead",
 				genre : "triphop"
@@ -119,24 +119,24 @@
 			 *
 			 * required ingredients: where to start, where to end, how many to increment
 			 */
-			
-			function sortAlbums(){
-			var favAlbums = []; //created var for favorite list of albums, left brackets empty to create an empty list
-			var nonFavs = []; //created var for non-favorite list of albums (also empty list)
-			for (var i = 0; i < 4; i++) {// i is the number of the item on list being looked up, ++ is n+1
 
+			function sortAlbums(albumsArg) { //sortAlbums is the function which will sort, albumsArg is name for list of albums to sort.
+				var favAlbums = []; //created var for favorite list of albums, left brackets empty to create an empty list
+				var nonFavs = []; //created var for non-favorite list of albums (also empty list)
+				for (var i = 0; i < 4; i++) {// i is the number of the item on list being looked up, ++ is n+1
 
-				 // console.log(albums[i]); // console logging all albums and their details (commented out this log)
-				
-				var myItem = albums[i]; //created var myItem, which is eqivalent, or a renamed designation of contents in albums array
-				if /*testing for genre=hiphop*/(myItem.genre == "hiphop") {//opening bracket of if statement return value
-					
-					// favAlbums.push saving for end, step 9 TODO> convert for to function
-					
-							console.log(myItem);
-						} else { //else statement to return string in all cases where genre doesn't = hiphop in albums array
-							console.log("Genre other than hiphop") //console logging all non-hiphop albums with string
-						}// end of if statement
+					// console.log(albums[i]); // console logging all albums and their details (commented out this log)
+
+					var myItem = albums[i];
+					//created var myItem, which is eqivalent, or a renamed designation of contents in albums array
+					if/*testing for genre=hiphop*/ (myItem.genre == "hiphop") {//opening bracket of if statement return value
+
+						// favAlbums.push saving for end, step 9 TODO> convert for to function
+
+						console.log(myItem);
+					} else {//else statement to return string in all cases where genre doesn't = hiphop in albums array
+						console.log("Genre other than hiphop") //console logging all non-hiphop albums with string
+					}// end of if statement
 
 				}// end of for loop
 			}// end of sortAlbums function
