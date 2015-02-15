@@ -92,25 +92,24 @@
 		</script>
 
 		<script>
-			/*this is a list (array) as indicated by the square brackets.*/
+			/*this is a list (array, as indicated by the square brackets) of albums and their genres.*/
 
-			var favmarket = []
-
-			var market = [{
-				name : "bacon",
-				type : "meat"
+			var albums = [{
+				name : "dummy",
+				artist : "portishead"
+				genre : "triphop"
 			}, {
-				name : "grouper",
-				type : "fish"
+				name : "theFutureIsNow",
+				artist : "nonPhixion"
+				genre : "hiphop"
 			}, {
-				name : "salmon",
-				type : "fish"
+				name : "illmatic",
+				artist : "nas"
+				genre : "hiphop"
 			}, {
-				name : "veal",
-				type : "meat"
-			}, {
-				name : "tuna",
-				type : "meat"
+				name : "wirelessInternet",
+				artist : "arpanet"
+				genre : "ambient"
 			}];
 
 			/* "for" loop
@@ -123,9 +122,9 @@
 			for (var i = 0; i < 5; i++) {/*++ is n+1*/
 
 				console.log(i);
-				console.log(market[i]);
+				console.log(albums[i]);
 
-				var myItem = market[i];
+				var myItem = albums[i];
 				/*creating additional label to not repeat market[i]*/
 
 				if (myItem.type == "fish") {
@@ -137,59 +136,8 @@
 
 				}// end of if statement
 
-				/*this is a list (array) as indicated by the square brackets.*/
-
-				var market_2 = [{
-					name : "lucky_charms",
-					type : "cereal"
-				}, {
-					name : "milk",
-					type : "dairy"
-				}, {
-					name : "eggs",
-					type : "dairy"
-				}, {
-					name : "cheese",
-					type : "dairy"
-				}, {
-					name : "granola",
-					type : "cereal"
-				}];
-
-				/* function sortMarket takes a list of market objects
-				 as an  arguement and prints out the ones of type plain*/
-				function sortMarket(marketList) {
-
-					var favMarket = []
-					for (var i = 0; i < 5; i++) {/*++ is n+1*/
-
-						var myItem = market[i];
-						/*creating additional label to not repeat market[i]*/
-
-						if (myItem.type == "fish") {
-
-							console.log(myItem);
-						} else {
-							console.log("No thanks ")
-						}//end of else statement
-
-					}// end of if statement
-
-					favMarket.push(myItem)
-					return (favMarket)
 
 				}// end of for loop
-
-			}// end of sortMarkets function
-			console.log("sorting market_2");
-			sortMarket(market_2);
-			var favs1 = sortMarket(market_2)
-			console.log(favs1)
-
-			console.log("sorting market");
-			sortMarket(market);
-			var favs2 = sortMarket(market_2)
-			console.log(favs2)
 
 		</script>
 
