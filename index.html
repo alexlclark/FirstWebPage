@@ -142,14 +142,14 @@
 				//for (var i = 0; i < 4; i++) {// i is the number of the item on list being looked up, ++ is n+1 (commented out, as unused with function)
 
 					// console.log(albums[i]); // console logging all albums and their details (commented out this log)
-					var myItem = albumsArg[i];
+					var albumObject = albumsArg[i];
 					//now reflects local name in function
-					//created var myItem, which is eqivalent, or a renamed designation of contents in albums array
-					if/*testing for genre=hiphop*/ (myItem.genre == "hiphop") {//opening bracket of if statement return value
+					//created var albumObject, which is eqivalent, or a renamed designation of contents in albums array
+					if (albumObject.genre == "hiphop") {//testing for genre=hiphop, opening bracket of if statement return value
 
-						favAlbums.push(myItem);
+						favAlbums.push(albumObject);
 					} else {//else statement to return string in all cases where genre doesn't = hiphop in albums array
-						nonFavs.push(myItem);
+						nonFavs.push(albumObject);
 						//console logging all non-hiphop albums with string
 					}// end of if statement
 				}// end of for loop
